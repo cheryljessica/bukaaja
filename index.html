@@ -1,0 +1,20 @@
+<html>
+<title>Buat Iky</title>
+  <center>
+  <body>
+    <h1><font face="garamond">Mau Gak?</h1>
+    <button id="btn_mau" onclick="alert('Selamat Anda Mendapatkan Hatinya Kevin❤️!!!')"><font face="garamond">Mau</button>&nbsp;
+    <button id="btn_gamau" onclick="gamau(this)" style="position: absolute">
+      <font face="garamond">Gak
+    </button>
+  </body>
+  <script>
+    function gamau(id) {
+      var mau = document.getElementById("btn_mau");
+      var i = Math.floor(Math.random() * 300) + 1;
+      var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+      id.style.left = i + "px";
+      id.style.top = j + "px";
+    }
+  </script>
+</html>
